@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>宝硕小站</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="嘿，这里是任宝硕的个人网站，欢迎光临！">
+        <meta name="keywords" content="任宝硕,宝硕">
+        <meta name="author" content="renbaoshuo">
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/css/baoshuo.css"> -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/renbaoshuo/baoshuo-site@v1.0/assets/css/baoshuo.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="assets/lib/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- <script src="assets/lib/jQuery/jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.5.1/dist/jquery.min.js"></script>
+        <div id="main" class="main card">
+            <h2 style="text-align: center;">宝硕小站</h2>
+            <div class="tabs">
+                <div class="tab-2">
+                    <label for="tab2-1">主页</label>
+                    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                    <div>
+                        <!-- 首页 -->
+                        <div class="i">
+                            <p>嘿，这里是任宝硕的个人网站，欢迎光临！</p>
+                            <br>
+                            <div id="baoshuo-time" style="display: inherit; font-size: 15px;">
+                                我现在<span id="baoshuo-year-pre">&nbsp;</span><b><span id="baoshuo-year"></span></b><span id="baoshuo-year-des">&nbsp;岁</span><span id="baoshuo-month-pre">&nbsp;</span><b><span id="baoshuo-month"></span></b><span id="baoshuo-month-des">&nbsp;个月</span>大了哦~&nbsp;
+                            </div>
+                            <!-- 检测 JavaScript 是否启用 -->
+                            <noscript>
+                                <div style="padding: 10px 40px 10px 40px; position: relative; text-align: center; background: rgba(177,177,177,.3)!important;">浏览器未开启 JavaScript 功能! </div>
+                            </noscript>
+                            <script>$('#baoshuo-time').show();</script>
+                            <!-- 联系我 -->
+                            <br>
+                            <h3 style="padding-left: 5px;">联系我</h3>
+                            <div class="contact">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-qq" style="color:#1188ee;"></i>
+                                                <b style="color: #333; font-size: 17px;">&nbsp;1669818063</b>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-qq" style="color:#1188ee;"></i>
+                                                <b style="color: #333; font-size: 17px;">&nbsp;99300279</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-newspaper-o"></i>
+                                                <b>
+                                                    <a href="https://up3.cn/" style="text-decoration: none; font-size: 17px; color: #333;">&nbsp;博客 up3.cn</a>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-2">
+                    <label for="tab2-2">客户端信息</label>
+                    <input id="tab2-2" name="tabs-two" type="radio">
+                    <div style="text-align: left;">
+                        <div class="info">
+                            <table style="padding: 10px 5px 10px 2px;">
+                                <tr>
+                                    <td><i class="fa fa-info-circle"></i></td>
+                                    <td style="padding-left: 10px; text-align: left; text-indent: 0%; line-height: 16px;">
+                                        此页面仅用于定位您的浏览器和网络信息，不涉及您的隐私信息，更不会将数据上传至服务器，请放心使用。
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <div style="font-size: 85%; line-height: 140%;">
+                            <span>您的 IP 地址: <code id="userip" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+                            <br>
+                            <span>您的地理位置: <code id="userplace" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+                            <br>
+                            <span>您的 ISP: <code id="userisp" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+                            <br>
+                            <span>客户端当前时间: <code id="usernowtime" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+                            <br>
+                            <span>客户端操作系统: <code id="usersystem" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span style="text-align: center; font-size: 70%;">当前 CDN 节点: <code id="cdn" style="padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px;">获取中</code></span>
+            <footer id="footer" style="padding-top:10px; font-size: 10px;">
+                <span>&copy;&nbsp;<span id="nowyear">2020</span>&nbsp;<a style="color: inherit; text-decoration: none; cursor: pointer; word-break: break-all;" href="https://www.baoshuo.ren/">宝硕小站</a>&nbsp;版权所有</span>
+                | <a href="https://github.com/renbaoshuo/baoshuo-site" style="color: inherit; text-decoration: none; cursor: pointer; word-break: break-all;">GitHub</a>
+                <br>
+                <span>友情链接: <a href="https://baoyun.ren/">宝云小站</a></span>
+            </footer>
+        </div>
+        <!-- <script src="assets/js/ie.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/renbaoshuo/baoshuo-site@v1.0/assets/js/ie.min.js"></script>
+        <!-- <script src="assets/js/baoshuo.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/renbaoshuo/baoshuo-site@v1.0/assets/js/baoshuo.min.js"></script>
+        <!-- <script src="assets/js/userinfo.js"></script>  -->
+        <script src="https://cdn.jsdelivr.net/gh/renbaoshuo/baoshuo-site@v1.0/assets/js/userinfo.min.js"></script>
+    </body>
+</html>
