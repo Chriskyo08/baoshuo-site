@@ -48,6 +48,13 @@ var baoshuotime = function() {
     } else {
         byear = nyear - birthYear;
     }
+    // 计算月份 Calculation display month
+    bmonth = ndate < birthDay ? nmonth - birthMonth - 1 : nmonth - birthMonth;
+    if(bmonth < 0) {
+        bmonth = 12 + bmonth;
+        byear  = byear - 1;
+    }
+
     // 判断输出 determine display
     if(byear > 0) {
         $('#baoshuo-year').html(byear);
@@ -56,11 +63,6 @@ var baoshuotime = function() {
         $('#baoshuo-year').hide();
         $('#baoshuo-year-des').hide();
     }
-    
-    // 计算月份 Calculation display month
-    bmonth = ndate < birthDay ? nmonth - birthMonth - 1 : nmonth - birthMonth;
-    bmonth = bmonth < 0 ? -bmonth : bmonth ;
-    // 判断输出 determine display
     if(bmonth > 0) {
         $('#baoshuo-month').html(bmonth);
     } else {
