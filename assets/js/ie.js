@@ -1,12 +1,14 @@
 /**
  * Baoshuo's Small Site
- * 
+ * -------------------------------
  * Author: RenBaoshuo
  * Date: 2020/05/21
  * Link: https://www.baoshuo.ren/
  * Github: renbaoshuo/baoshuo-site
- * 
+ * -------------------------------
+ * Copyright 2020 RenBaoshuo All Rights Reserved.
  */
+
 
 (function () {
     // 判断 User-Agent 以识别浏览器类型

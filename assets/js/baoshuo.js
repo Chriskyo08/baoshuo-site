@@ -1,12 +1,14 @@
 /**
  * Baoshuo's Small Site
- * 
+ * -------------------------------
  * Author: RenBaoshuo
  * Date: 2020/05/21
  * Link: https://www.baoshuo.ren/
  * Github: renbaoshuo/baoshuo-site
- * 
+ * -------------------------------
+ * Copyright 2020 RenBaoshuo All Rights Reserved.
  */
+
 
 // 变量定义 Define variable
 /** NOTICE: `birthYear`, `birthMonth` and `birthDay` must use Beijing Time (UTC+8). */
