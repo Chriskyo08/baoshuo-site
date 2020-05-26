@@ -72,7 +72,6 @@ var baoshuotime = function() {
         $('#baoshuo-month').hide();
         $('#baoshuo-month-des').hide();
     }
-    console.log(`byear=${byear},bmonth=${bmonth}`)
 }
 
 // 程序入口
