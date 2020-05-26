@@ -2,7 +2,7 @@
  * Baoshuo's Small Site
  * -------------------------------
  * Author: RenBaoshuo
- * Date: 2020/05/21
+ * Date: 2020/05/26
  * Link: https://www.baoshuo.ren/
  * Github: renbaoshuo/baoshuo-site
  * -------------------------------
@@ -18,7 +18,8 @@ setInterval(userNowTime, 500);
 // 客户端 IP 信息
 $.getJSON("https://pubstatic.b0.upaiyun.com/?_upnode&t=" + (+new Date()), function(json) {
     $('#userip').html(json.remote_addr);
-    $('#userplace').html(json.remote_addr_location.continent + ' - ' + json.remote_addr_location.country + ' ' + json.remote_addr_location.province + ' ' + json.remote_addr_location.city);
+    $('#usercon').html(json.remote_addr_location.continent);
+    $('#userplace').html(json.remote_addr_location.country + ' ' + json.remote_addr_location.province + ' ' + json.remote_addr_location.city);
     $('#userisp').html(json.remote_addr_location.isp)
 });
 
