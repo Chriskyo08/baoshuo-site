@@ -59,6 +59,7 @@ var baoshuotime = function() {
     
     // 计算月份 Calculation display month
     bmonth = ndate < birthDay ? nmonth - birthMonth - 1 : nmonth - birthMonth;
+    bmonth = bmonth < 0 ? -bmonth : bmonth ;
     // 判断输出 determine display
     if(bmonth > 0) {
         $('#baoshuo-month').html(bmonth);
@@ -67,6 +68,7 @@ var baoshuotime = function() {
         $('#baoshuo-month').hide();
         $('#baoshuo-month-des').hide();
     }
+    console.log(`byear=${byear},bmonth=${bmonth}`)
 }
 
 // 程序入口
