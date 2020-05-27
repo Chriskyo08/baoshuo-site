@@ -58,17 +58,15 @@ getCDNinfo = function() {
 			for (var i = 0; i < areas.length; i++) {
 				if (areas[i].indexOf(area) != -1) {
                     $('#cdn').html(areas[i]);
-                    break;
+                    return;
 				}
 			}
-		}
+        },
+        error: function(){
+            $('#cdn').html('Hongkong');
+        }
 	})
 }
 $(document).ready(function() {
-    try {
-        getCDNinfo();
-    } catch {
-        $('#cdn').html("未使用 CDN ！");
-    };
-	
+    getCDNinfo();
 });
