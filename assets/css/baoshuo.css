@@ -64,7 +64,7 @@ body {
     text-align: left;
 }
 
-@media(min-width: 550px) {
+@media(min-width: 400px) {
     .card {
         border: none;
         padding: 20px 80px 20px;
@@ -80,8 +80,24 @@ body {
     .contact td {
         min-width: 250px;
     }
+    .contact td b {
+        color: #333;
+        font-size: 17px;
+    }
 }
-@media(max-width: 549px) {
+@media(max-width: 399px) {
+    body {
+        font-size: 10px!important;
+    }
+    #main {
+        top: 0%!important;
+    }
+    .main .i {
+        font-size: 13px;
+    }
+    .time {
+        font-size: 12px;
+    }
     .card {
         border: none;
         padding: 20px 40px 20px;
@@ -92,7 +108,18 @@ body {
         line-height: 175%;
     }
     .contact td {
-        min-width: 140px;
+        min-width: 120px;
+        font-size: 12px !important;
+    }
+    .contact td b, .contact td b a {
+        color: #333;
+        font-size: 12px;
+    }
+    .tabs [class^="tab"] label,
+    .tabs [class*=" tab"] label {
+        font-size: 1.5em !important;
+        padding: 0.75rem 0 !important;
+        text-align: center; 
     }
 }
 
@@ -230,4 +257,9 @@ code {
     color: #c7254e; 
     background-color: #f9f2f4; 
     border-radius: 4px;
+}
+
+.time {
+    display: inherit; 
+    font-size: 15px;
 }
