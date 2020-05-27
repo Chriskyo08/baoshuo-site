@@ -63,10 +63,9 @@ getCDNinfo = function() {
 			}
         },
         error: function(){
-            $('#cdn').html('Hongkong');
+            $('#cdntext').hide();
         }
 	})
 }
-$(document).ready(function() {
-    getCDNinfo();
-});
+getCDNinfo();
+
